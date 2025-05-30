@@ -22,5 +22,12 @@
     "globals": "^16.2.0",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.33.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fayaz-246/utility.djs"
+  },
+  "bugs": {
+    "url": "https://github.com/Fayaz-246/utility.djs/issues"
   }
 }
