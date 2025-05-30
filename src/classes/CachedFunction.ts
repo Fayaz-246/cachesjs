@@ -83,7 +83,7 @@ export class CachedFunction<Args extends any[] = any, R = any> {
     return this.cache.get(key);
   }
 
-  clear() {
+  clear(): void {
     return this.cache.clear();
   }
 
