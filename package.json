@@ -25,9 +25,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fayaz-246/utility.djs"
+    "url": "git+https://github.com/Fayaz-246/cachesjs"
   },
   "bugs": {
-    "url": "https://github.com/Fayaz-246/utility.djs/issues"
+    "url": "https://github.com/Fayaz-246/cachesjs/issues"
   }
 }
