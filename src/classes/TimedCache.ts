@@ -20,17 +20,16 @@ export default class TimedCache<V = any> {
     } else {
       this.name = options.name;
     }
+    if (options.onExpire) this.onExpire = options.onExpire;
 
-    this.onExpire = options.onExpire;
     if (!options.defaultTTL)
       warn(`${this.name} Timed Cache |  No TTL set, using default. [ 5m ]`);
     this.defaultTTL = parseTimeToMs(options.defaultTTL || "5m");
   }
 
   add(key: string, value: V, ttl?: string): void {
-    this.delete(key);
+    if (this.check(key)) this.delete(key);
     const ttlMs = ttl ? parseTimeToMs(ttl) : this.defaultTTL;
-
     this.cache.set(key, value);
     this.expiresAt.set(key, Date.now() + ttlMs);
 

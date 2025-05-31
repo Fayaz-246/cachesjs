@@ -45,11 +45,11 @@ export default class CachedFunction<Args extends any[] = any, R = any> {
   }
 
   runSync(...args: Args): R {
-    if (this.isAsyncFunction(this.func)) {
+    if (this.isAsyncFunction(this.func))
       throw new Error(
         `${this.name} Cached Function | Cannot run async function with runSync`,
       );
-    }
+
     const key = hash({ args });
 
     if (this.cache.check(key)) return this.cache.get(key) as R;
