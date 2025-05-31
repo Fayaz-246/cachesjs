@@ -27,3 +27,5 @@ yarn add cachesjs
 const Cache = require('cachesjs');
 const myCache = new Cache();
 ```
+
+## [Documentation](https://cachesjs.vercel.app/)
