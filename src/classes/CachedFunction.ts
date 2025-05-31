@@ -8,7 +8,7 @@ import { hash, parseTimeToMs } from "../utils";
 import { info } from "../logs";
 import TimedCache from "./TimedCache";
 
-export class CachedFunction<Args extends any[] = any, R = any> {
+export default class CachedFunction<Args extends any[] = any, R = any> {
   public name: string;
   protected ttl: number;
   protected func: CacheFunc<Args, R> | AsyncCacheFunc<Args, R>;
