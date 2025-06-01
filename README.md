@@ -22,10 +22,4 @@ pnpm add cachesjs
 yarn add cachesjs
 ```
 
-## Usage
-```js
-const Cache = require('cachesjs');
-const myCache = new Cache();
-```
-
 ## [Documentation](https://cachesjs.vercel.app/)
