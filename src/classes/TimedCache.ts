@@ -72,7 +72,6 @@ export default class TimedCache<V = any> {
 
   hasExpired(key: string): boolean {
     const expires = this.expiresAt.get(key);
-    if (!expires) return true;
     return expires !== undefined && Date.now() > expires;
   }
 
