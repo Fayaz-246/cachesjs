@@ -17,7 +17,7 @@ export default class CachedFunction<Args extends any[] = any, R = any> {
   constructor(options: ICachedFunctionConstructorOps<Args, R>) {
     if (!options.name) {
       warn("No name for cache using defaults.");
-      this.name = "UnamedCachedFunction";
+      this.name = "UnnamedCachedFunction";
     } else {
       this.name = options.name;
     }
