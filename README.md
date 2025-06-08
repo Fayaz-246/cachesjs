@@ -22,4 +22,4 @@ pnpm add cachesjs
 yarn add cachesjs
 ```
 
-## [Documentation](https://cachesjs.vercel.app/)
+## [Documentation](https://cachesjs.com/)
